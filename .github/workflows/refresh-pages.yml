@@ -5,7 +5,7 @@ on:
   schedule:
     # Off the hour; a second chance follows each missed run. The committed
     # budget reservation prevents more than one ten-request LL2 attempt per 65 minutes.
-    - cron: '13,28,43,58 * * * *'
+    - cron: '7,22,37,52 * * * *'
 
 permissions: {}
 
