@@ -1,0 +1,10 @@
+{
+  "name": "rocket-cue-public",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "build:site": "node scripts/build-site.mjs"
+  },
+  "engines": { "node": ">=24" }
+}

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How the Rocket cue iPhone app handles local data, location and network requests.">
+  <title>Privacy · Rocket cue</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header><div class="wrap"><a class="brand" href="../">Rocket cue</a><nav aria-label="Site"><a href="../support/">Support</a><a href="./" aria-current="page">Privacy</a></nav></div></header>
+  <main class="wrap">
+    <p class="eyebrow">Effective 28 September 2026</p>
+    <h1>Privacy notice</h1>
+    <p class="lead">Rocket cue is a free personal app by Kian Tajbakhsh. It does not require an account or run advertising or developer analytics. For privacy questions, email <a href="mailto:kian@tajbakhsh.dev">kian@tajbakhsh.dev</a>.</p>
+
+    <h2>Information on your iPhone</h2>
+    <p>Your Watchlist, selected place or current-location origin, sort and tab choices, map state, and cached launch and pad data stay in the app's local storage. You can remove Watchlist items and clear a saved origin in the app. Removing the app removes its local data, subject to your device's backup and restore settings.</p>
+
+    <h2>Location and maps</h2>
+    <p>Rocket cue asks for When In Use location access only if you select “Use current location.” It calculates distance to pads on your device; your precise coordinates and Watchlist are not sent to the launch-data feed. You can deny permission and search for a place instead. Apple MapKit supplies maps and place search under <a href="https://www.apple.com/legal/privacy/">Apple's privacy practices</a>.</p>
+
+    <h2>Launch data and hosting</h2>
+    <p>The public app requests a read-only launch and pad cache over HTTPS from this GitHub Pages site. A scheduled updater obtains the source data from <a href="https://thespacedevs.com/llapi">The Space Devs Launch Library 2</a>. The updater sends its own network requests to that source; individual app users do not send their Watchlist or location to it through the feed. The app displays the last source-check time and may show older saved data when a refresh is delayed or fails.</p>
+    <p><a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages">GitHub Pages logs visitors' IP addresses for security</a> when it serves this website or the app's feed. GitHub handles that information under its <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">privacy statement</a>. Rocket cue's page code does not add analytics scripts, ads or its own cookies.</p>
+
+    <h2>Images and external links</h2>
+    <p>Some images are bundled in the app and make no separate network request. Rocket cue may request a source-supplied thumbnail over HTTPS from The Space Devs' known media host; that host receives the device's ordinary network request. Launch photos without acceptable reuse information are omitted. If you choose a webcast, it opens in another app or browser, whose own privacy practices apply. The app does not autoplay streams.</p>
+
+    <h2>Calendar</h2>
+    <p>Choosing Add to Calendar opens Apple's event editor with the launch's title, target time, broad region and reminder. You decide whether to save it and which Calendar account to use. Rocket cue does not read your existing events or run its own notification service.</p>
+
+    <h2>Your choices and changes</h2>
+    <p>You can use the schedule without location permission, clear the saved origin, remove Watchlist items, avoid external links or remove the app. For questions or corrections, email <a href="mailto:kian@tajbakhsh.dev">kian@tajbakhsh.dev</a>. This notice will be updated if the app's data flows change.</p>
+  </main>
+  <footer><div class="wrap">Rocket cue · <a href="../">Home</a> · <a href="../support/">Support</a></div></footer>
+</body>
+</html>
