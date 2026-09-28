@@ -1,6 +1,10 @@
 name: Refresh Rocket cue pages and feed
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/refresh-pages.yml'
   workflow_dispatch:
   schedule:
     # Off the hour; a second chance follows each missed run. The committed
