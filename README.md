@@ -11,6 +11,14 @@ Rocket cue is a free personal app for following upcoming rocket launches on iPho
 
 The Android APK is available from [GitHub Releases](https://github.com/Kian-hdr/rocket-cue/releases/tag/android-v1.0.0-build8). It is not a Google Play listing. See the [installation and update guide](docs/DOWNLOADS.md) for checksums, signing continuity and validation details.
 
+## Screenshots
+
+| iPhone · launch list | iPhone · launch details | Android · launch list | Android · map |
+| --- | --- | --- | --- |
+| [<img src="public/assets/screenshots/iPhone_Launches.jpg" width="190" alt="Rocket cue on iPhone showing the launch list">](public/assets/screenshots/iPhone_Launches.jpg) | [<img src="public/assets/screenshots/iPhone_Launch_Detail.jpg" width="190" alt="Rocket cue on iPhone showing launch details and a credited vehicle photo">](public/assets/screenshots/iPhone_Launch_Detail.jpg) | [<img src="public/assets/screenshots/Android_Launches.png" width="190" alt="Rocket cue on Android showing the launch list">](public/assets/screenshots/Android_Launches.png) | [<img src="public/assets/screenshots/Android_Map.png" width="190" alt="Rocket cue on Android showing the dark launch-facility map">](public/assets/screenshots/Android_Map.png) |
+
+Genuine app captures: iPhone Simulator, September 28, 2026; Android build 8 emulator, October 25, 2026. Launch schedules shown are historical examples. Select an image for full size. [Screenshot provenance](docs/SCREENSHOTS.md).
+
 ## What the app does
 
 - Shows upcoming missions with search and provider, location and date filters.

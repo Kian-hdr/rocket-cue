@@ -21,3 +21,9 @@ The scheduled GitHub Actions workflow gets several chances per hour. A state fil
 ## Source and hosting privacy
 
 The updater makes shared server-side requests to Launch Library 2. Individual app users request static files from GitHub Pages, which [logs visitor IP addresses for security](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection). The public [privacy notice](https://kian-hdr.github.io/rocket-cue/privacy/) describes this and the app's other data flows.
+
+## Website-only publication
+
+The manually dispatched `publish-static.yml` workflow updates website content and screenshots without contacting Launch Library 2 or changing the refresh budget. It downloads the current published health, launch and pad files, validates complete counts, unique IDs and identical source timestamps, and copies their original bytes into the new Pages artifact alongside `public/`.
+
+An unavailable, malformed or inconsistent published snapshot fails the build before deployment. It uses the same `rocket-cue-pages` concurrency group as the regular refresh workflow, so the two publication paths do not deploy concurrently. It does not make an old source timestamp look new. Regular scheduled feed refreshes and their 65-minute request reservation remain unchanged.

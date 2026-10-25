@@ -1,0 +1,50 @@
+[
+  {
+    "file": "iPhone_Launches.jpg",
+    "sha256": "714f27ccd54d343e29534dc798a3f3cf32cc841dcd5633ca4d1a470f783a9e45",
+    "width": 1320,
+    "height": 2868,
+    "bytes": 966166,
+    "platform": "iOS",
+    "capture_date": "2026-09-28",
+    "build": "1.0.0 (8)",
+    "source_kind": "Release configuration Simulator",
+    "processing": "none; byte-for-byte copy"
+  },
+  {
+    "file": "iPhone_Launch_Detail.jpg",
+    "sha256": "eff353030ee5c7d3ff20fb008fe15571ab2255de35e96b86d1a1105fa222fc40",
+    "width": 1320,
+    "height": 2868,
+    "bytes": 1594687,
+    "platform": "iOS",
+    "capture_date": "2026-09-28",
+    "build": "1.0.0 (8)",
+    "source_kind": "Release configuration Simulator",
+    "processing": "none; byte-for-byte copy"
+  },
+  {
+    "file": "Android_Launches.png",
+    "sha256": "c52db805218569ebe9ab95ace0c387e5e1dc8430a7800d6d2cc3ac7d9e0f7e0c",
+    "width": 1080,
+    "height": 1920,
+    "bytes": 803659,
+    "platform": "Android",
+    "capture_date": "2026-10-25",
+    "build": "1.0.0 (8)",
+    "source_kind": "signed release on Android emulator",
+    "processing": "none; byte-for-byte copy"
+  },
+  {
+    "file": "Android_Map.png",
+    "sha256": "17cf304ca97d8d81896695757c959806a067ba5db0b1d91581091aac551ffd1b",
+    "width": 1080,
+    "height": 1920,
+    "bytes": 465329,
+    "platform": "Android",
+    "capture_date": "2026-10-25",
+    "build": "1.0.0 (8)",
+    "source_kind": "signed release on Android emulator",
+    "processing": "none; byte-for-byte copy"
+  }
+]
