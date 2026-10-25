@@ -36,7 +36,7 @@ footer { border-top: 1px solid #d9dce2; padding: 1.6rem 0 2.5rem; color: #526071
 .screenshots { margin: 2.5rem 0; }
 .screenshots-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; align-items: start; }
 .screenshots figure { margin: 0; min-width: 0; }
-.screenshots a { display: block; border-radius: .75rem; }
+.screenshots figure > a { display: block; border-radius: .75rem; }
 .screenshots a:focus-visible { outline: 3px solid currentColor; outline-offset: 4px; }
 .screenshots img { display: block; width: 100%; height: auto; border-radius: .75rem; }
 .screenshots figcaption { margin-top: .6rem; font-size: .85rem; font-weight: 600; }

@@ -19,6 +19,8 @@ The Android APK is available from [GitHub Releases](https://github.com/Kian-hdr/
 
 Genuine app captures: iPhone Simulator, September 28, 2026; Android build 8 emulator, October 25, 2026. Launch schedules shown are historical examples. Select an image for full size. [Screenshot provenance](docs/SCREENSHOTS.md).
 
+Android map: [© OpenMapTiles](https://openmaptiles.org/) · [© OpenStreetMap contributors](https://www.openstreetmap.org/copyright), served by [OpenFreeMap](https://openfreemap.org/).
+
 ## What the app does
 
 - Shows upcoming missions with search and provider, location and date filters.
