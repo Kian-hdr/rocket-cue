@@ -11,6 +11,6 @@ These are genuine captures of the running Rocket cue app. The repository stores 
 
 The displayed missions, launch times, countdowns and map state are historical examples, not current launch information. The iPhone release and Android client have native platform layouts. These images do not establish behavior on every device or imply that the Simulator package is byte-identical to an App Store device binary.
 
-The app's visible photo and map credits remain present. Vehicle photos depict historical vehicles; they are not evidence of a future launch. Underlying image/data rights and attributions remain with their credited owners.
+The app's visible photo credits remain present. The gallery credits the Android map to [OpenMapTiles](https://openmaptiles.org/) and [OpenStreetMap contributors](https://www.openstreetmap.org/copyright), served by [OpenFreeMap](https://openfreemap.org/); the screenshot shows the app's collapsed attribution button. Vehicle photos depict historical vehicles; they are not evidence of a future launch. Underlying image/data rights and attributions remain with their credited owners.
 
 Original dimensions, file sizes and SHA-256 hashes are in [SCREENSHOTS.json](SCREENSHOTS.json). Open images under [public/assets/screenshots](../public/assets/screenshots/) for their full resolution.
