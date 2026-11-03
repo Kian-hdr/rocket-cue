@@ -1,6 +1,6 @@
 # Rocket cue
 
-Rocket cue is a free personal app for following upcoming rocket launches on iPhone, iPad and Android. Browse and filter missions, explore launch facilities, keep a local Watchlist, open source-listed webcasts and prepare Calendar events. No account, ads or in-app purchases.
+Follow upcoming rocket launches on iPhone, iPad, and Android.
 
 ## Download
 
@@ -10,6 +10,8 @@ Rocket cue is a free personal app for following upcoming rocket launches on iPho
 </p>
 
 [iPhone and iPad](https://apps.apple.com/us/app/rocket-cue/id6816076297) · [Android APK · Preview · android-v1.0.0-build8](https://github.com/Kian-hdr/rocket-cue/releases/download/android-v1.0.0-build8/RocketCue-1.0.0-8.apk)
+
+Rocket cue is a free personal app for following upcoming rocket launches on iPhone, iPad and Android. Browse and filter missions, explore launch facilities, keep a local Watchlist, open source-listed webcasts and prepare Calendar events. No account, ads or in-app purchases.
 
 | Platform | Install | Requirements |
 | --- | --- | --- |
