@@ -1,15 +1,15 @@
-# Rocket cue
+<h1 align="center">Rocket cue</h1>
 
-Follow upcoming rocket launches on iPhone, iPad, and Android.
+<p align="center">Follow upcoming rocket launches on iPhone, iPad, and Android.</p>
 
-## Download
+<h2 align="center">Download</h2>
 
-<p>
+<p align="center">
 <a href="https://apps.apple.com/us/app/rocket-cue/id6816076297"><img src="docs/assets/downloads/download_1.svg" width="240" height="48" alt="View on the App Store"></a>
 <a href="https://github.com/Kian-hdr/rocket-cue/releases/download/android-v1.0.0-build8/RocketCue-1.0.0-8.apk"><img src="docs/assets/downloads/download_2.svg" width="240" height="48" alt="Download for Android"></a>
 </p>
 
-[iPhone and iPad](https://apps.apple.com/us/app/rocket-cue/id6816076297) · [Android APK · Preview · android-v1.0.0-build8](https://github.com/Kian-hdr/rocket-cue/releases/download/android-v1.0.0-build8/RocketCue-1.0.0-8.apk)
+<p align="center"><a href="https://apps.apple.com/us/app/rocket-cue/id6816076297">iPhone and iPad</a> · <a href="https://github.com/Kian-hdr/rocket-cue/releases/download/android-v1.0.0-build8/RocketCue-1.0.0-8.apk">Android APK · Preview · android-v1.0.0-build8</a></p>
 
 Rocket cue is a free personal app for following upcoming rocket launches on iPhone, iPad and Android. Browse and filter missions, explore launch facilities, keep a local Watchlist, open source-listed webcasts and prepare Calendar events. No account, ads or in-app purchases.
 
