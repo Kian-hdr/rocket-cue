@@ -80,3 +80,61 @@ test("upstream budget waits 65 minutes and rejects corrupt state", () => {
   assert.equal(shouldAttempt(new Date(now.getTime() - 66 * 60_000).toISOString(), now), true);
   assert.throws(() => shouldAttempt("invalid", now), /invalid/);
 });
+
+
+test("deadline failures identify the feed and page without retrying", async () => {
+  const failure = new DOMException("The operation was aborted due to timeout", "TimeoutError");
+  let calls = 0;
+  await assert.rejects(fetchCompleteFeed("launches", now, async () => {
+    calls++;
+    throw failure;
+  }), error => {
+    assert.match(error.message, /LL2 launches page 1/);
+    assert.equal(error.cause, failure);
+    return true;
+  });
+  assert.equal(calls, 1);
+});
+
+test("page caps keep a complete attempt within ten upstream requests", async () => {
+  let totalCalls = 0;
+  for (const [kind, cap, sourcePath] of [
+    ["launches", 6, "/2.3.0/launches/upcoming/"],
+    ["pads", 4, "/2.3.0/pads/"]
+  ]) {
+    let calls = 0;
+    await assert.rejects(fetchCompleteFeed(kind, now, async () => {
+      calls++;
+      totalCalls++;
+      return Response.json({
+        count: cap + 1,
+        next: `https://ll.thespacedevs.com${sourcePath}?offset=${calls * 100}`,
+        results: [{ id: `${kind}-${calls}` }]
+      });
+    }), /incomplete/);
+    assert.equal(calls, cap);
+  }
+  assert.equal(totalCalls, 10);
+});
+
+test("a failed pad refresh leaves the prior complete artifact unchanged", async () => {
+  const dir = await mkdtemp(path.join(tmpdir(), "rocket-cue-failed-refresh-"));
+  const outputDir = path.join(dir, "site");
+  await mkdir(outputDir);
+  const prior = '{"status":"ready","source_checked_at":"2026-09-27T12:00:00Z"}';
+  await writeFile(path.join(outputDir, "health.json"), prior);
+  const feeds = [];
+  await assert.rejects(buildSite({
+    now,
+    fetcher: async () => new Response("not found", { status: 404 }),
+    loadFeed: async kind => {
+      feeds.push(kind);
+      if (kind === "pads") throw new Error("upstream deadline");
+      return { count: 1, next: null, results: [{ id: "launch-a" }] };
+    },
+    outputDir,
+    outputFile: null
+  }), /upstream deadline/);
+  assert.deepEqual(feeds, ["launches", "pads"]);
+  assert.equal(await readFile(path.join(outputDir, "health.json"), "utf8"), prior);
+});

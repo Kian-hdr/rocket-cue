@@ -2,6 +2,8 @@
 // The public iPhone app source lives in a separate private workspace.
 
 export const sourceOrigin = "https://ll.thespacedevs.com";
+// Ten sequential pages still fit inside the workflow's fifteen-minute build limit.
+export const sourceRequestTimeoutMs = 60_000;
 const maxPageBytes = 8 * 1024 * 1024;
 const maxSnapshotBytes = 20 * 1024 * 1024;
 
@@ -84,15 +86,21 @@ export async function fetchCompleteFeed(kind, now, fetcher = fetch) {
       throw new Error("LL2 returned an unsafe or repeated page URL");
     }
     visited.add(url.href);
-    const response = await fetcher(url, {
-      headers: {
-        Accept: "application/json",
-        "User-Agent": "RocketCue/1.0 (+mailto:kian@tajbakhsh.dev)"
-      },
-      signal: AbortSignal.timeout(20_000)
-    });
-    if (!response.ok) throw new Error(`LL2 ${kind} returned HTTP ${response.status}`);
-    const page = parsePage(await readBounded(response));
+    let page;
+    try {
+      const response = await fetcher(url, {
+        headers: {
+          Accept: "application/json",
+          "User-Agent": "RocketCue/1.0 (+mailto:kian@tajbakhsh.dev)"
+        },
+        signal: AbortSignal.timeout(sourceRequestTimeoutMs)
+      });
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      page = parsePage(await readBounded(response));
+    } catch (error) {
+      const detail = error instanceof Error ? error.message : String(error);
+      throw new Error(`LL2 ${kind} page ${pageNumber + 1} failed: ${detail}`, { cause: error });
+    }
     if (expectedCount === null) expectedCount = page.count;
     else if (page.count !== expectedCount) throw new Error("LL2 count changed during pagination");
     for (const record of page.results) {
