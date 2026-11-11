@@ -64,4 +64,4 @@ The site serves complete read-only JSON snapshots at [`v1/launches.json`](https:
 
 ## Contact
 
-Rocket cue is a personal project by Kian Konrad. For help, corrections or privacy questions: [kian@tajbakhsh.dev](mailto:kian@tajbakhsh.dev). Please remove private location and other sensitive information before posting screenshots or public issues.
+Rocket cue is a personal project by Kian Konrad. For help, corrections or privacy questions: [contact@kiankonrad.me](mailto:contact@kiankonrad.me). Please remove private location and other sensitive information before posting screenshots or public issues.
