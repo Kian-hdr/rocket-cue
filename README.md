@@ -7,7 +7,13 @@
 
 <p align="center">Follow upcoming rocket launches on iPhone, iPad, and Android.</p>
 
-<p align="center"><img src="docs/assets/Rocket_Cue_App_Icon.jpg" width="96" height="96" alt="Rocket cue app icon"></p>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/assets/Rocket_Cue_App_Icon_Dark.png">
+    <source media="(prefers-color-scheme: light)" srcset="docs/assets/Rocket_Cue_App_Icon_Default.png">
+    <img src="docs/assets/Rocket_Cue_App_Icon_Default.png" width="96" height="96" alt="Rocket cue app icon">
+  </picture>
+</p>
 
 <p align="center"><a href="https://apps.apple.com/us/app/rocket-cue/id6816076297"><img src="docs/assets/downloads/download_1.svg" width="240" height="48" alt="View on the App Store"></a></p>
 
