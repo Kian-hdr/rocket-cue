@@ -7,6 +7,8 @@
 
 <p align="center">Follow upcoming rocket launches on iPhone, iPad, and Android.</p>
 
+<p align="center"><img src="docs/assets/Rocket_Cue_App_Icon.jpg" width="96" height="96" alt="Rocket cue app icon"></p>
+
 <p align="center"><a href="https://apps.apple.com/us/app/rocket-cue/id6816076297"><img src="docs/assets/downloads/download_1.svg" width="240" height="48" alt="View on the App Store"></a></p>
 
 <p align="center"><a href="https://github.com/Kian-hdr/rocket-cue/releases/download/android-v1.0.0-build8/RocketCue-1.0.0-8.apk"><img src="docs/assets/downloads/download_2.svg" width="240" height="48" alt="Download for Android"></a></p>
